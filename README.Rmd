@@ -22,8 +22,7 @@ I often use the color palettes from the wesanderson R package. Recently, I was b
 
 ## Installation
 
-
-__Or the development version__
+Development version
 
 ```r
 devtools::install_github("rmvpaeme/queensgambit")
@@ -35,51 +34,56 @@ devtools::install_github("rmvpaeme/queensgambit")
 library("queensgambit")
 
 # See all palettes
-names(wes_palettes)
+names(qg_palettes)
 ```
 
 ## Palettes
 
-### Bottle Rocket (1996)
+### Openings
 
+![openings](./figure/openings.jpg)
 ```{r, bottlerocket1}
-wes_palette("BottleRocket1")
-wes_palette("BottleRocket2")
+qg_palette("openings")
 ```
 
-### Rushmore (1998)
+### Adopted
+
+![adopted](./figure/adopted.jpg)
 
 ```{r, rushmore}
-wes_palette("Rushmore1")
+qg_palette("adopted")
 ```
 
-### The Royal Tenenbaums (2001)
+### Moscow
+
+![moscow](./figure/moscow.jpg)
 
 ```{r, royal}
-wes_palette("Royal1")
-wes_palette("Royal2")
+qg_palette("moscow")
 ```
 
 ```{r, ggplot1, fig.height = 3}
 library("ggplot2")
 ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = wes_palette("Royal1"))
+  scale_fill_manual(values = qg_palette("moscow")[2:3]) + theme_bw()
 ```
 
-### The Life Aquatic with Steve Zissou (2004)
+### Endgame
+
+![endgame](./figure/endgame.jpg)
 
 ```{r, lifeaquatic}
-wes_palette("Zissou1")
+qg_palette("endgame")
 ```
 
 
 ```{r, volcano, fig.height = 3}
-pal <- wes_palette("Zissou1", 21, type = "continuous")
+pal <- qg_palette("endgame", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ```{r, zissou_heatmap, fig.height = 3}
-pal <- wes_palette("Zissou1", 100, type = "continuous")
+pal <- qg_palette("room", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -89,65 +93,34 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-### The Darjeeling Limited (2007)
+### Practice
+
+![practice](./figure/practice.jpg)
 
 ```{r, darjeeling}
-wes_palette("Darjeeling1")
-wes_palette("Darjeeling2")
+qg_palette("practice")
 ```
 
-### Hotel Chevalier (2007)
+### Room
+
+![room](./figure/room.jpg)
 
 ```{r, chevalier}
-wes_palette("Chevalier1")
+qg_palette("room")
 ```
 
-### Fantastic Mr. Fox (2009)
+### Squash
+
+![squash](./figure/squash.jpg)
 
 ```{r, fantasticfox}
-wes_palette("FantasticFox1")
+qg_palette("squash")
 ```
 
-### Moonrise Kingdom (2012)
+### US open
+
+![US open](./figure/USopen.jpg)
 
 ```{r, moonrise}
-wes_palette("Moonrise1")
-wes_palette("Moonrise2")
-wes_palette("Moonrise3")
+qg_palette("USopen")
 ```
-
-### Castello Cavalcanti (2013)
-
-```{r, castello}
-wes_palette("Cavalcanti1")
-```
-
-### The Grand Budapest Hotel (2014)
-
-```{r, grandbudapest}
-wes_palette("GrandBudapest1")
-wes_palette("GrandBudapest2")
-```
-
-
-### The Isle of Dogs (2018)
-
-```{r, isleofdogs}
-wes_palette("IsleofDogs1")
-wes_palette("IsleofDogs2")
-```
-
-## As seen in these publications
-
-- [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances  08 Aug 2018
-
-![Imgur](https://i.imgur.com/gYKFwEc.jpg)
-
-
-![Imgur](https://i.imgur.com/3Ztc5Qa.png)
-
-
-- [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational Gender Gap. Socius: Sociological Research for a Dynamic World, 4, 237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956) 
-
-
-![Imgur](https://i.imgur.com/0BVNi9g.jpg)
