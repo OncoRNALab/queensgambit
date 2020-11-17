@@ -42,7 +42,7 @@ Palettes
 qg_palette("openings")
 ```
 
-![](figure/bottlerocket1-1.png)
+![](figure/openings-1.png)
 
 ### Adopted
 
@@ -52,7 +52,7 @@ qg_palette("openings")
 qg_palette("adopted")
 ```
 
-![](figure/rushmore-1.png)
+![](figure/adopted-1.png)
 
 ### Moscow
 
@@ -62,7 +62,7 @@ qg_palette("adopted")
 qg_palette("moscow")
 ```
 
-![](figure/royal-1.png)
+![](figure/moscow-1.png)
 
 ### Endgame
 
@@ -72,7 +72,7 @@ qg_palette("moscow")
 qg_palette("endgame")
 ```
 
-![](figure/lifeaquatic-1.png)
+![](figure/endgame-1.png)
 
 ``` r
 qg_palette("endgame", 21, type = "continuous")
@@ -88,7 +88,7 @@ qg_palette("endgame", 21, type = "continuous")
 qg_palette("practice")
 ```
 
-![](figure/darjeeling-1.png)
+![](figure/practice-1.png)
 
 ### Room
 
@@ -98,7 +98,7 @@ qg_palette("practice")
 qg_palette("room")
 ```
 
-![](figure/chevalier-1.png)
+![](figure/room-1.png)
 
 ### Squash
 
@@ -108,7 +108,7 @@ qg_palette("room")
 qg_palette("squash")
 ```
 
-![](figure/fantasticfox-1.png)
+![](figure/squash-1.png)
 
 ### US open
 
@@ -118,7 +118,7 @@ qg_palette("squash")
 qg_palette("USopen")
 ```
 
-![](figure/moonrise-1.png)
+![](figure/usopen-1.png)
 
 ``` r
 library("ggplot2")
