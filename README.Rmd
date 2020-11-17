@@ -62,11 +62,6 @@ qg_palette("adopted")
 qg_palette("moscow")
 ```
 
-```{r, ggplot1, fig.height = 3}
-library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = qg_palette("moscow")[2:3]) + theme_bw()
-```
 
 ### Endgame
 
@@ -78,19 +73,7 @@ qg_palette("endgame")
 
 
 ```{r, volcano, fig.height = 3}
-pal <- qg_palette("endgame", 21, type = "continuous")
-image(volcano, col = pal)
-```
-
-```{r, zissou_heatmap, fig.height = 3}
-pal <- qg_palette("room", 100, type = "continuous")
-# heatmap is a local dataset
-ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
-  geom_tile() + 
-  scale_fill_gradientn(colours = pal) + 
-  scale_x_discrete(expand = c(0, 0)) +
-  scale_y_discrete(expand = c(0, 0)) + 
-  coord_equal() 
+qg_palette("endgame", 21, type = "continuous")
 ```
 
 ### Practice
@@ -123,4 +106,10 @@ qg_palette("squash")
 
 ```{r, moonrise}
 qg_palette("USopen")
+```
+
+```{r, ggplot1, fig.height = 3}
+library("ggplot2")
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
+  scale_fill_manual(values = qg_palette("USopen")[1:2]) + theme_bw()
 ```
