@@ -11,7 +11,7 @@ qg_palettes <- list(
   practice = c("#997a80", "#9daca7", "#322920", "#3d515a"),
   room = c("#9e9693", "#65403a", "#75574d", "#2f292b"),
   squash = c("#0a0a0a", "#8f9190", "#5c4943", "#532623",  "#636365"),
-  USopen = c("#d3a0a5", "#6e4030", "#3b5963", "#636d64"),
+  USopen = c("#d3a0a5", "#6e4030", "#3b5963", "#636d64")
 )
 
 #' A Queen's Gambit palette generator

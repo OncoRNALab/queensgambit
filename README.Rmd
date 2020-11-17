@@ -15,34 +15,24 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Wes Anderson Palettes
+# Queens Gambit palettes
 
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
-
-![](rushmore.jpg)
-
-> I saved you from boring plots. What did you ever do? - Max Fischer (probably)
-
-Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
+I often use the color palettes from the wesanderson R package. Recently, I was blown away by the cinematography and color palettes of the Netflix show "The Queens Gambit", so I made a color palette generated similar to the wesanderson package. 
 
 
 ## Installation
 
-```r
-install.packages("wesanderson")
-```
 
 __Or the development version__
 
 ```r
-devtools::install_github("karthik/wesanderson")
+devtools::install_github("rmvpaeme/queensgambit")
 ```
 
 ## Usage
 
 ```{r, palettes_dummy}
-library("wesanderson")
+library("queensgambit")
 
 # See all palettes
 names(wes_palettes)
