@@ -3,10 +3,12 @@
 Queens Gambit palettes
 ======================
 
-I often use the color palettes from the wesanderson R package. Recently,
-I was blown away by the cinematography and color palettes of the Netflix
-show “The Queens Gambit”, so I made a color palette generated similar to
-the wesanderson package.
+Recently, I was blown away by the cinematography and color palettes of
+the Netflix show “The Queens Gambit”, so I made a color palette
+generated similar to the wesanderson package. Full credit to Karthik Ram
+and his [Wes Anderson color palette
+package](https://github.com/karthik/wesanderson) for the code and
+inspiration.
 
 Installation
 ------------
